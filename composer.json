@@ -1,5 +1,5 @@
 {
-  "name": "swoft/aop",
+  "name": "swoft-fork/aop",
   "type": "library",
   "version": "v2.0.11",
   "keywords": [
@@ -9,12 +9,12 @@
     "aop"
   ],
   "description": "swoft aop component",
-  "homepage": "https://github.com/swoft-cloud/swoft-aop",
+  "homepage": "https://github.com/sky-up/swoft-aop",
   "license": "Apache-2.0",
   "require": {
-    "php": ">=7.1",
-    "swoft/proxy": "~2.0.0",
-    "swoft/stdlib": "~2.0.0"
+    "php": ">=8.0",
+    "swoft-fork/proxy": "~2.0.0",
+    "swoft-fork/stdlib": "~2.0.0"
   },
   "autoload": {
     "psr-4": {
