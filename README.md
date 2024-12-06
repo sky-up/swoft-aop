@@ -16,7 +16,7 @@ Swoft Aop Component
 - composer command
 
 ```bash
-composer require swoft/aop
+composer require swoft-fork/aop
 ```
 
 ## Resources

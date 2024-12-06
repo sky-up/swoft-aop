@@ -16,7 +16,7 @@ The english readme please see [README.md](README.md)
 - composer 命令
 
 ```bash
-composer require swoft/aop
+composer require swoft-fork/aop
 ```
 
 ## 相关资源
