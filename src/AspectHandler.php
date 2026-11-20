@@ -221,7 +221,7 @@ class AspectHandler
      * @return mixed
      * @throws ReflectionException
      */
-    private function invokeAdvice(array $aspectAry, Throwable $catch = null, $return = null)
+    private function invokeAdvice(array $aspectAry, ?Throwable $catch = null, $return = null)
     {
         [$aspectClass, $aspectMethod] = $aspectAry;
 
@@ -271,7 +271,7 @@ class AspectHandler
      *
      * @return ProceedingJoinPoint
      */
-    private function getProceedingJoinPoint(Throwable $catch = null, $return = null): ProceedingJoinPoint
+    private function getProceedingJoinPoint(?Throwable $catch = null, $return = null): ProceedingJoinPoint
     {
         $pgp = new ProceedingJoinPoint($this->className, $this->target, $this->methodName, $this->args, $this->argsMap);
         $pgp->setHandler($this);
@@ -296,7 +296,7 @@ class AspectHandler
      *
      * @return JoinPoint
      */
-    private function getJoinPoint(Throwable $catch = null, $return = null): JoinPoint
+    private function getJoinPoint(?Throwable $catch = null, $return = null): JoinPoint
     {
         $joinPoint = new JoinPoint($this->className, $this->target, $this->methodName, $this->args, $this->argsMap);
         if ($catch) {
